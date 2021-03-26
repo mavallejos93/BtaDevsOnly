@@ -1,254 +1,389 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/img/favicon-1.ico" sizes="192x192" />
+    <link rel="apple-touch-icon" href="./assets/img/favicon-1.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/carousel.css" />
+    <title>Almacenes Only</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="./assets/img/favicon-1.ico" sizes="192x192" />
-  <link rel="apple-touch-icon" href="./assets/img/favicon-1.ico" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
-  <link rel="stylesheet" href="./assets/css/style.css" />
-  <link rel="stylesheet" href="./assets/css/carousel.css" />
-  <title>Almacenes Only</title>
-</head>
+  <body>
+    <!--  header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark1 pading">
+      <div class="container-fluid container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-<body>
-  <!--  header -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-dark1 pading">
-    <div class="container-fluid container">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
-        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <a
+          href="./index.html"
+          class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none navbar-brand"
+        >
+          <img
+            class="bi me-2"
+            width="140"
+            height="80"
+            src="./assets/img/Only.png"
+            alt="Logo Only"
+          />
+        </a>
+        <div class="collapse navbar-collapse dropdown" id="navbarTogglerDemo03">
+          <ul
+            class="navbar-nav mr-auto mt-2 mt-lg-0 nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+          >
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-secondary">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle px-2 text-white1"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-expanded="false"
+                >Tienda</a
+              >
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#">Femenino</a></li>
+                <li><a class="dropdown-item" href="#">Masculino</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li><a class="dropdown-item" href="#">Infantil</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-white1">Sobre Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-white1">Ubicación</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-white1">Contacto</a>
+            </li>
+          </ul>
+
+          <button type="button" class="btn">
+            <form class="form-inline my-2 my-lg-0">
+              <input
+                class="form-control mr-sm-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-outline-success1 my-2 my-sm-0"
+                type="submit"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                  />
+                </svg>
+              </button>
+            </form>
+          </button>
+          <button type="button" class="btn btn-outline-success1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-person-circle"
+              viewBox="0 0 16 16"
+            >
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+              <path
+                fill-rule="evenodd"
+                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+              />
+            </svg>
+          </button>
+          <button type="button" class="btn btn-outline-success1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-cart"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!--  fin header -->
+    <!--  inicio carrusel -->
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="./assets/img/ropa1.jpg"
+            alt=""
+            class="bd-placeholder-img"
+            width="100%"
+            height="120%"
+          />
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h2 class="letras1">Almacenes ONLY</h2>
+              <p class="letras2">Los mejores descuentos a un solo Click.</p>
+              <p>
+                <a class="btn btn-lg btn-primary" href="#">Ropa para Ella</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./assets/img/ropa2.jpg"
+            alt=""
+            class="bd-placeholder-img"
+            width="100%"
+            height="120%"
+          />
+
+          <div class="container">
+            <div class="carousel-caption">
+              <h2 class="letras1">Almacenes ONLY</h2>
+              <p class="letras2">Precios de locura en esta temporada.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Ropa para El</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./assets/img/ropa3.jpg"
+            alt=""
+            class="bd-placeholder-img"
+            width="100%"
+            height="100%"
+          />
+
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h2 class="letras1">Almacenes ONLY</h2>
+              <p class="letras2">
+                El mejor sitio para comprar ropa para tu Hijo.
+              </p>
+              <p>
+                <a class="btn btn-lg btn-primary" href="#">Ropa Infantil</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#myCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
       </button>
-
-      <a href="./index.html"
-        class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none navbar-brand">
-        <img class="bi me-2" width="140" height="80" src="./assets/img/Only.png" alt="Logo Only" />
-      </a>
-      <div class="collapse navbar-collapse dropdown" id="navbarTogglerDemo03">
-        <ul
-          class="navbar-nav mr-auto mt-2 mt-lg-0 nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-secondary">Inicio</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle px-2 text-white1" data-bs-toggle="dropdown" href="#" role="button"
-              aria-expanded="false">Tienda</a>
-            <ul class="dropdown-menu dropdown-menu-end">
-              <li><a class="dropdown-item" href="#">Femenino</a></li>
-              <li><a class="dropdown-item" href="#">Masculino</a></li>
-              <li>
-                <hr class="dropdown-divider" />
-              </li>
-              <li><a class="dropdown-item" href="#">Infantil</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-white1">Sobre Nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-white1">Ubicación</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-white1">Contacto</a>
-          </li>
-        </ul>
-
-        <button type="button" class="btn">
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-            <button class="btn btn-outline-success1 my-2 my-sm-0" type="submit">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
-                viewBox="0 0 16 16">
-                <path
-                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-              </svg>
-            </button>
-          </form>
-        </button>
-        <button type="button" class="btn btn-outline-success1">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle"
-            viewBox="0 0 16 16">
-            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-            <path fill-rule="evenodd"
-              d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
-          </svg>
-        </button>
-        <button type="button" class="btn btn-outline-success1">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart"
-            viewBox="0 0 16 16">
-            <path
-              d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
-          </svg>
-        </button>
-      </div>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#myCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
     </div>
-  </nav>
-  <!--  fin header -->
-  <!--  inicio carrusel -->
-  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
-        aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="./assets/img/ropa1.jpg" alt="" class="bd-placeholder-img" width="100%" height="120%" />
-        <div class="container">
-          <div class="carousel-caption text-start">
-            <h2 class="letras1">Almacenes ONLY</h2>
-            <p class="letras2">Los mejores descuentos a un solo Click.</p>
-            <p>
-              <a class="btn btn-lg btn-primary" href="#">Ropa para Ella</a>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="./assets/img/ropa2.jpg" alt="" class="bd-placeholder-img" width="100%" height="120%" />
+    <!--  fin carrusel -->
 
-        <div class="container">
-          <div class="carousel-caption">
-            <h2 class="letras1">Almacenes ONLY</h2>
-            <p class="letras2">Precios de locura en esta temporada.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Ropa para El</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="./assets/img/ropa3.jpg" alt="" class="bd-placeholder-img" width="100%" height="100%" />
-
-        <div class="container">
-          <div class="carousel-caption text-end">
-            <h2 class="letras1">Almacenes ONLY</h2>
-            <p class="letras2">El mejor sitio para comprar ropa para tu Hijo.</p>
-            <p>
-              <a class="btn btn-lg btn-primary" href="#">Ropa Infantil</a>
-            </p>
-          </div>
+    <!--  inicio historia -->
+    <div class="history">
+      <div class="card" style="width: 100%">
+        <img
+          src="http://lorempixel.com/640/360
+        "
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body gris">
+          <h5 class="card-title gris">Historia Almacenes Only</h5>
+          <p class="card-text gris">
+            Almacenes Only, es el nombre como se conoce popularmente a las doce
+            (12) tiendas de ropa que funcionan en Bogotá. Este negocio nació en
+            al año de 1954. El fundador, José C. Rodriguez F., llegó desplazado
+            por la violencia que se vivía en el campo, y después de pasos breves
+            por diferentes empleos, logró adquirir a crédito una maquinaria para
+            la fabricación de camisas. Adicionalmente abrió un local comercial
+            en el barrio Chapinero de Bogotá, en el cual vendía parte de lo que
+            producía.
+          </p>
+          <p class="card-text gris">
+            En 1956 se casó con Lilia Moncada R., quién tenía un pequeño taller
+            de confección de vestidos para niñas. Al unir esfuerzos empezaron a
+            crecer lentamente, tanto la fábrica como los puntos de venta. Como
+            consecuencia de varios factores en 1961 decidieron cerrar la fábrica
+            y dedicarse exclusivamente a los almacenes.
+          </p>
+          <a href="#" class="btn btn-primary center" id="btnLeer">Leer Mas</a>
         </div>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Anterior</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Siguiente</span>
-    </button>
-  </div>
-  <!--  fin carrusel -->
-
-  <!--  inicio historia -->
-  <div class="history">
-    <div class="card1" style="width: 100%">
-      <img src="./assets/img/fotoalmacen.jpg" class="card-img-top" alt="..." />
-      <div class="card-body-gris">
-        <h5 class="card-title1">Historia Almacenes Only</h5>
-        <p class="card-text">
-          Almacenes Only, es el nombre como se conoce popularmente a las doce
-          (12) tiendas de ropa que funcionan en Bogotá. Este negocio nació en
-          al año de 1954. El fundador, José C. Rodriguez F., llegó desplazado
-          por la violencia que se vivía en el campo, y después de pasos breves
-          por diferentes empleos, logró adquirir a crédito una maquinaria para
-          la fabricación de camisas. Adicionalmente abrió un local comercial
-          en el barrio Chapinero de Bogotá, en el cual vendía parte de lo que
-          producía.
-        </p>
-        <a href="#" class="btn btn-primary center" id="btnLeer">Leer Mas</a>
-      </div>
-    </div>
-  </div>
-  <!--Direccion-->
-  <div class="col">
-    <div class="card">
-      <div class="card-body2">
-        <h5 class="card-title2">Oficina Principal</h5>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127252.2004905797!2d-74.17659183981455!3d4.659664733708304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe1f3364e09f7f618!2sOficinas%20almacenes%20Only!5e0!3m2!1ses!2sco!4v1616622350721!5m2!1ses!2sco"
-          width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
-        <p class="textoDireccion">
-          Calle 59 No 8 - 47 <br />
-          PBX (57 1) 212 7777 <br />
-          Fax (57 1) 555 7520 <br />
-          Bogotá D.C. - Colombia
-        </p>
-      </div>
-    </div>
-  </div>
-  <!-- Politicas de Tratamiento y Datos de Contacto -->
-  <div class="container-md politicas">
-    <div class="row row-cols-1 row-cols-md-2 g-4">
-      <div class="col">
-        <div class="card">
-          <img src="./assets/img/atencion-al-cliente.svg" class="card-img-top" alt="..." style="
+    <!-- Politicas de Tratamiento y Datos de Contacto -->
+    <div class="container-md politicas">
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card contact">
+            <img
+              src="./assets/img/neve-envelope-1.png"
+              class="card-img-top"
+              alt="..."
+              style="
                 width: 55px;
                 height: 55px;
                 margin-left: 1rem;
                 margin-top: 1rem;
-              " />
-          <div class="card-body">
-            <h5 class="card-title">Contactenos</h5>
-            <p class="card-text">info@almacenesonly.com</p>
+              "
+            />
+            <div class="card-body">
+              <h5 class="card-title">Contactenos</h5>
+              <p class="card-text">info@almacenesonly.com</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src="./assets/img/almacenamiento-de-archivos.svg" class="card-img-top" alt="..." style="
-                width: 53px;
-                height: 54px;
+        <div class="col">
+          <div class="card contact">
+            <img
+              src="./assets/img/neve-unlimited-revisions2.png"
+              class="card-img-top"
+              alt="..."
+              style="
+                width: 52px;
+                height: 59px;
                 margin-left: 1rem;
                 margin-top: 1rem;
-              " />
-          <div class="card-body">
-            <h5 class="card-title">
-              Politica de Tratamiento de Datos Personales
-            </h5>
-            <p class="card-text">
-              This is a longer card with supporting text below as a natural
-              lead-in to additional
-            </p>
+              "
+            />
+            <div class="card-body">
+              <h5 class="card-title">Oficina Principal</h5>
+              <p class="card-text">
+                Calle 59 No 8 - 47 <br />
+                PBX (57 1) 212 7777 <br />
+                Fax (57 1) 555 7520 <br />
+                Bogotá D.C. - Colombia
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src="./assets/img/garantia.svg" class="card-img-top" alt="..." style="
+        <div class="col">
+          <div class="card contact">
+            <img
+              src="./assets/img/neve-ultimate-perfection-1.png"
+              class="card-img-top"
+              alt="..."
+              style="
+                width: 53px;
+                height: 59px;
+                margin-left: 1rem;
+                margin-top: 1rem;
+              "
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Politica de Tratamiento de Datos Personales
+              </h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card contact">
+            <img
+              src="./assets/img/neve-smart-experience1.png"
+              class="card-img-top"
+              alt="..."
+              style="
                 width: 57px;
                 height: 55px;
                 margin-left: 1rem;
                 margin-top: 1rem;
-              " />
-          <div class="card-body">
-            <h5 class="card-title">Politica de Cambios y Garantias Only</h5>
-            <p class="card-text">
-              This is a longer card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
-            </p>
+              "
+            />
+            <div class="card-body">
+              <h5 class="card-title">Politica de Cambios y Garantias Only</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Footer start -->
-  <footer style="margin-top: 15px">
-    <p>
-      &copy; Desarrollado por BTADevs - Rodriguez Franco y Cia SCS
-      Organización Nacional de Comercio - Almacenes Only
-    </p>
-  </footer>
+    <!-- Footer start -->
+    <footer class="footer card-footer">
+      &copy; Desarrollado por BTADevs - Rodriguez Franco y Cia SCS Organización
+      Nacional de Comercio - Almacenes Only
+    </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
-  </script>
-</body>
-
+    <script src="./assets/js/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
