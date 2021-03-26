@@ -1,0 +1,150 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.gris {
+  background-color: #bbbfca;
+}
+
+.politicas {
+  padding: 0px;
+}
+
+.center {
+  align-items: center !important;
+}
+
+/* css header */
+.bg-dark1 {
+  background-color: #ffffff;
+}
+
+.text-white1 {
+  color: rgb(0, 0, 0) !important;
+}
+
+.btn-outline-success1 {
+  color: #ce1a1a;
+  border-color: #ffffff;
+}
+
+.pading {
+  padding: 0px;
+}
+
+.px-2 {
+  padding-right: 0.9rem !important;
+  padding-left: 0.9rem !important;
+}
+/* fin css header */
+
+/* css carrusel */
+.carousel {
+  margin-bottom: 4rem;
+}
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+.carousel-item {
+  height: 35rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+
+.marketing .col-lg-4 p {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+}
+
+.featurette-divider {
+  margin: 5rem 0;
+}
+
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+
+  letter-spacing: -0.05rem;
+}
+
+.textoDireccion {
+  float: right;
+  padding-right: 500px;
+}
+
+.letras1 {
+  text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000,
+    1px -1px 1px #000;
+}
+
+.letras2 {
+  text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000,
+    1px -1px 1px #000;
+}
+
+.card1 {
+  padding-bottom: 30px;
+  background-color: #f5f5f7;
+  
+}
+
+.card-img-top {
+  height: 450px;
+  width: 450px;
+  margin-left: 300px;
+  margin-top: 20px;
+}
+.card-body-gris {
+  width: 450px;
+  float: right;
+  margin-right: 300px;
+  text-align: justify;
+  font-family: sans-serif;
+  font-weight: 400;
+  padding: 30px 30px;
+}
+.card-title1 {
+  text-align: center;
+  font-size: 30px;
+}
+.card-body2{
+  margin-left: 200px;
+}
+.card-title2{
+  margin-top: 20px;
+}
+
+@media (min-width: 40em) {
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+/* fin css carrucel */
